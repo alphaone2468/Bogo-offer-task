@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="line"></div>
+            <h1>YAY! It's BOGO</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="unitsContainer">
+
+            <div class="unitElement" id="unitElement-1" onclick="handleOnClick(event)">
+                <div class="unitHeader">
+                    <input type="radio" id="unit-1" name="unit">
+                    <div class="unitInfo">
+                        <div class="unitTitleRow">
+                            <div class="unitTitleLeft">
+                                <p>1 Unit</p>
+                                <span class="discount">10% Off</span>
+                            </div>
+                            <p class="price">$10.00 USD</p>
+                        </div>
+                        <div class="standardPriceRow">
+                            <p>Standard Price</p>
+                            <p>$24.00 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unitDetails" id="unitDetails-1">
+                    <div class="detailRow">
+                        <p></p>
+                        <p style="margin-left: 10px;">Size</p>
+                        <p style="margin-left: 50px;">Color</p>
+                    </div>
+                    <div class="detailRow">
+                        <p>#1</p>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <select>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unitElement selected" id="unitElement-2" onclick="handleOnClick(event)">
+                <span class="popularBadge">MOST POPULAR</span>
+                <div class="unitHeader">
+                    <input type="radio" id="unit-2" name="unit" checked>
+                    <div class="unitInfo">
+                        <div class="unitTitleRow">
+                            <div class="unitTitleLeft">
+                                <p>2 Unit</p>
+                                <span class="discount">20% Off</span>
+                            </div>
+                            <p class="price">$18.00 USD</p>
+                        </div>
+                        <div class="standardPriceRow">
+                            <p>Standard Price</p>
+                            <p>$24.00 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unitDetails active" id="unitDetails-2">
+                    <div class="detailRow">
+                        <p></p>
+                        <p style="margin-left: 10px;">Size</p>
+                        <p style="margin-left: 50px;">Color</p>
+                    </div>
+                    <div class="detailRow">
+                        <p>#1</p>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <select>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                    <div class="detailRow">
+                        <p>#2</p>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <select>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="unitElement" id="unitElement-3" onclick="handleOnClick(event)">
+                <div class="unitHeader">
+                    <input type="radio" id="unit-3" name="unit">
+                    <div class="unitInfo">
+                        <div class="unitTitleRow">
+                            <div class="unitTitleLeft">
+                                <p>3 Unit</p>
+                                <span class="discount">30% Off</span>
+                            </div>
+                            <p class="price">$24.00 USD</p>
+                        </div>
+                        <div class="standardPriceRow">
+                            <p>Standard Price</p>
+                            <p>$24.00 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unitDetails" id="unitDetails-3">
+                    <div class="detailRow">
+                        <p></p>
+                        <p style="margin-left: 10px;">Size</p>
+                        <p style="margin-left: 50px;">Color</p>
+                    </div>
+                    <div class="detailRow">
+                        <p>#1</p>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <select>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                    <div class="detailRow">
+                        <p>#2</p>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <select>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                    <div class="detailRow">
+                        <p>#3</p>
+                        <select>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <select>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div class="deliveryTotal">
+                <p>Free Delivery</p>
+                <p>Total : $18.00 USD</p>
+            </div>
+            <button class="addToCartBtn">
+                <span style="font-size: 24px;">+</span> 
+                <span>Add to Cart</span> 
+            </button>
+            <p class="poweredBy">@ Powered by Pumper</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
